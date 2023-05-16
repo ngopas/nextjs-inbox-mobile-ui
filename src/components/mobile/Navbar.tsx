@@ -2,6 +2,7 @@ import { HiInboxArrowDown } from 'react-icons/hi2';
 import { FaPaperPlane } from 'react-icons/fa';
 import { MdPostAdd, MdSettings } from 'react-icons/md';
 import { GoCalendar } from 'react-icons/go';
+import NavbarItem from './NavbarItem';
 
 const Navbar = () => {
   return (
@@ -12,16 +13,7 @@ const Navbar = () => {
       "
     >
       <div className="grid grid-cols-5">
-        <div
-          className="
-            flex flex-col
-            items-center justify-between
-            m-2
-          "
-        >
-          <HiInboxArrowDown size={24} />
-          <div>Inbox</div>
-        </div>
+        <NavbarItem icon={HiInboxArrowDown} label={'Inbox'} />
       </div>
     </div>
   );
