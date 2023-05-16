@@ -1,4 +1,7 @@
 import { HiInboxArrowDown } from 'react-icons/hi2';
+import { FaPaperPlane } from 'react-icons/fa';
+import { MdPostAdd, MdSettings } from 'react-icons/md';
+import { GoCalendar } from 'react-icons/go';
 
 const Navbar = () => {
   return (
