@@ -13,7 +13,14 @@ const MailItem = () => {
       >
         <div className="flex flex-row">
           <TiArrowForward className="flex-none" />
-          <p className="line-clamp-2">{subject}</p>
+          <div>
+            <div className="flex flex-row gap-2">
+              <div className="grow font-semibold text-sm">sender</div>
+              <div className="font-light text-xs">5hr</div>
+              <div className="font-light text-xs">{'>'}</div>
+            </div>
+            <p className="line-clamp-2 text-sm">{subject}</p>
+          </div>
         </div>
       </div>
     </a>
