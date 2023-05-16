@@ -19,8 +19,20 @@ const NavbarItem: React.FC<NavbarItemProps> = ({
           m-2
         "
     >
-      <Icon size={24} />
-      <div>{label}</div>
+      <Icon
+        size={24}
+        className={`
+          ${selected ? 'fill-blue-800' : 'fill-gray-500'}
+      `}
+      />
+      <div
+        className={`
+          font-light text-xs
+          ${selected ? 'text-blue-800' : 'text-gray-500'}  
+        `}
+      >
+        {label}
+      </div>
     </div>
   );
 };
